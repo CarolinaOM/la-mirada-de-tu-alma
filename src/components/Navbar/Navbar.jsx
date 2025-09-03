@@ -25,6 +25,34 @@ const navbarLinks = [
   
 ]
 
+const navbarnNtworks = [
+  {
+    id:1,
+    title:"Instagram", 
+    link:"https://www.instagram.com/lamiradadetualma/",
+    icon:'bi bi-instagram'
+  },
+  {
+    id:2,
+    title:"Youtube", 
+    link:"https://www.youtube.com/@lamiradadetualma261",
+    icon:'bi bi-youtube'
+  },
+  {
+    id:3,
+    title:"TikTok",
+    link:"https://www.tiktok.com/@lamiradadetualma",
+    icon:'bi bi-tiktok'
+  },
+  {
+    id:4,
+    title:"Facebook",
+    link:"https://www.facebook.com/lamiradadetualma.lamiradadetualma.1",
+    icon:'bi bi-facebook'
+  },
+  
+]
+
 const Navbar = () => {
   return (
     <nav className="bg-red-500">
@@ -46,8 +74,17 @@ const Navbar = () => {
 
         <div>
           <ul className="list-none">
-            <li>Redes</li>
-            <li>Redes</li>
+            {navbarnNtworks.map ((link)=>
+              <li key={link.id}>
+                  <a href={link.link}>
+                    <i
+                      className={`${link.icon}`}
+                    >
+
+                    </i>
+                  </a>
+              </li>
+            )}
           </ul>
         </div>
 
