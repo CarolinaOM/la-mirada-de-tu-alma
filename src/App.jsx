@@ -1,24 +1,22 @@
-import Navbar from "./components/Navbar/Navbar"
-import Hero from "./components/Hero/Hero"
-import Fondo from "./assets/Fondo.png";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Inicio/Inicio';
+import Filosofia from './components/Filosofia/Filosofia';
 
 function App() {
-
-  const bgImagen = {
-      backgroundImage: `url(${Fondo})`,
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "55% 50%",
-      backgroundSize: "cover",
-      position: "relative",
-      filter: "brightness(85%)" // Hace la imagen más opaca para que el menú resalte
-    };
-  
   return (
-    <div style={bgImagen} className="overflow-hidden min-h-screen">
-      <Navbar />
-      <Hero />
-    </div>
-  )
+    <BrowserRouter>
+      <div className="bg-gradient-to-br from-purple-200 to-indigo-200 overflow-hidden min-h-screen">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/filosofia" element={<Filosofia />} />
+          {/*Rutas */}
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
