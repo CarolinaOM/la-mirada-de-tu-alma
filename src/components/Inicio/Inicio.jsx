@@ -86,7 +86,7 @@ const Inicio = () => {
         </div>
       </section>
 
-      {/* Sección de la Guía Gratuita - Con texto e imagen */}
+      {/* Sección de la Guía Gratuita */}
       <section className="py-20 bg-purple-100 text-gray-900">
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
           

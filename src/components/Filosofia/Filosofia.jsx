@@ -8,8 +8,8 @@ import FilosofiaLogrosImagen from '../../assets/mujer-en-bosque-logros.jpg';
 
 const Filosofia = () => {
   const [ref, inView] = useInView({
-    triggerOnce: true, // La animación solo se ejecutará una vez
-    threshold: 0.1, // Se activa cuando el 10% del componente es visible
+    triggerOnce: true,
+    threshold: 0.1,
   });
 
   return (
@@ -51,6 +51,7 @@ const Filosofia = () => {
             </h3>
             <ul className="text-lg list-disc list-inside space-y-2 text-gray-200">
               <li>Reiki</li>
+              <li>Alineación de Chakras</li>
               <li>Limpieza Energética</li>
               <li>Lectura con Péndulo</li>
               <li>Lectura de Cartas</li>
@@ -58,46 +59,31 @@ const Filosofia = () => {
           </div>
         </div>
         
-        {/* Nueva Sección de Logros y Estadísticas con el diseño solicitado */}
-        <div className="relative w-full overflow-hidden rounded-lg shadow-xl" ref={ref}>
-          {/* Parte superior de la imagen */}
-          <div className="relative w-full h-auto max-h-[450px] overflow-hidden">
-            <img 
-              src={FilosofiaLogrosImagen} 
-              alt='Mujer meditando en un entorno natural con logros' 
-              className='w-full object-cover object-top'
-              style={{ maxHeight: '450px' }}
-            />
-          </div>
-
-          {/* Parte inferior con el fondo sólido y las estadísticas */}
-          <div className="bg-purple-800 py-10 px-6 sm:px-10 text-white">
+        {/* Sección de Logros y Estadísticas  */}
+        <div className="relative w-full rounded-lg shadow-xl overflow-hidden mb-16" ref={ref}>
+          <img 
+            src={FilosofiaLogrosImagen} 
+            alt='Mujer meditando en un entorno natural' 
+            className='w-full h-auto object-cover object-center'
+          />
+          <div className="absolute inset-x-0 bottom-0 py-10 px-6 sm:px-10 text-white bg-purple-900/80">
             <div className="grid grid-cols-2 gap-8">
-              
-              {/* Sección de Años de Experiencia */}
               <div className="flex flex-col items-center">
-                <p className="text-5xl font-bold text-purple-200">
+                <span className="text-4xl sm:text-5xl font-bold text-purple-200">
                   {inView && <CountUp end={10} duration={2} suffix="+" />}
-                </p>
-                <p className="text-sm font-medium text-gray-100 mt-2 text-center">
-                  AÑOS DE EXPERIENCIA
-                </p>
+                </span>
+                <p className="text-sm font-medium text-gray-100 mt-2 text-center">Años de Experiencia</p>
               </div>
-
-              {/* Sección de Títulos y Certificaciones */}
               <div className="flex flex-col items-center">
-                <p className="text-5xl font-bold text-purple-200">
+                <span className="text-4xl sm:text-5xl font-bold text-purple-200">
                   {inView && <CountUp end={5} duration={2} />}
-                </p>
-                <p className="text-sm font-medium text-gray-100 mt-2 text-center">
-                  TÍTULOS Y CERTIFICACIONES
-                </p>
+                </span>
+                <p className="text-sm font-medium text-gray-100 mt-2 text-center">Títulos y Certificaciones</p>
               </div>
-
             </div>
           </div>
         </div>
-
+        
         {/* Sección inferior con botón */}
         <div className="mt-16 text-center">
           <h3 className="text-3xl font-bold text-purple-400 mb-4">
