@@ -1,12 +1,21 @@
-# React + Vite
+# 🌟 La Mirada de tu Alma | Web de Contacto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un componente de contacto en React, diseñado para la web de La Mirada de tu Alma. Combina una estética mística y moderna con ilustraciones y un formulario de contacto, creado con la potencia de React, Vite y la flexibilidad de Tailwind CSS.
 
-Currently, two official plugins are available:
+## ✨ Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Diseño Reactivo y Responsivo**: Se adapta perfectamente a dispositivos móviles y de escritorio.
+* **Estética Mística**: Utiliza un fondo con gradiente, elementos de fondo (blobs) animados y colores vibrantes.
+* **Animaciones Sutiles**: Transiciones y efectos de movimiento para una experiencia de usuario fluida y atractiva.
+* **Componente Modular**: Fácil de integrar en cualquier proyecto de React.
+* **Integración de Redes Sociales**: Enlaces directos a Instagram, YouTube, TikTok y Facebook.
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+* **Vite**: Herramienta de construcción rápida para proyectos web modernos.
+* **Tailwind CSS**: Framework de CSS para un desarrollo rápido y flexible.
+* **Bi Icons**: Iconos vectoriales para una estética limpia.
+
+ ![La Mirada De Tu Alma](src/assets/Proyecto.png)
+
