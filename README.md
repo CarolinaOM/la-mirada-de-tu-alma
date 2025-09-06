@@ -23,14 +23,8 @@ Este es un componente de contacto en React, diseñado para la web de La Mirada d
 
 ---
 
-## 📄 Licencia
-
-Este proyecto está bajo la licencia **MIT**. Para más detalles, consulta el archivo `LICENSE`.
-
----
-
 ## ✉️ Contacto
 
-Si tienes alguna pregunta o sugerencia sobre el proyecto, no dudes en contactarme.
+Para ver este proyecto en acción, visita la página web:
 
 * **Página Web**: [La Mirada De Tu Alma](https://www.lawebdetualma.com)
