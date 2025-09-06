@@ -23,7 +23,7 @@ Este es un componente de contacto en React, diseñado para la web de La Mirada d
 
 Para ver este proyecto en acción, visita la página web:
 
-* **Página Web**: [La Mirada De Tu Alma](https://www.lawebdetualma.com)
+* **Página Web**: [La Mirada De Tu Alma](https://lamiradadetualma.netlify.app/)
 
 
 ![La Mirada De Tu Alma](src/assets/Proyecto.png)
