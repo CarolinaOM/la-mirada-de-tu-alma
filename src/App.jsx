@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Inicio/Inicio';
 import Filosofia from './components/Filosofia/Filosofia';
-import Terapias from './components/Terapias/Terapias'; // ¡Añade esta línea!
+import Terapias from './components/Terapias/Terapias';
+import Contacto from './components/Contacto/Contacto'; 
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/filosofia" element={<Filosofia />} />
-          <Route path="/terapias" element={<Terapias />} /> 
+          <Route path="/terapias" element={<Terapias />} />
+          <Route path="/contacto" element={<Contacto />} /> {/* Añade esta ruta */}
         </Routes>
       </div>
     </BrowserRouter>

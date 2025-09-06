@@ -73,9 +73,9 @@ const Navbar = () => {
 
   return (
     <nav className='fixed top-0 left-0 w-full z-50'>
-      {/* Menú de Escritorio con degradado transparente y blur */}
+      {/* Menú de Escritorio */}
       <div className='flex justify-between items-center sm:px-12 sm:py-6 px-4 py-3 text-white
-                    bg-gradient-to-b from-gray-700/80 to-gray-700/0 backdrop-blur-sm'>
+                       bg-gradient-to-b from-gray-700/80 to-gray-700/0 backdrop-blur-sm'>
         {/* Navbar Logo */}
         <div>
           <Link to="/">
@@ -129,10 +129,10 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Botón de Reservar Cita para Calendario */}
+          {/* Botón de Reservar Cita para Calendario (AHORA OCULTO) */}
           <Link
             to="/reservar-cita"
-            className="hidden md:block ml-12 px-6 py-2 bg-purple-600 text-white font-medium rounded-full shadow-lg transition hover:bg-purple-700 transform hover:scale-105"
+            className="hidden md:hidden ml-12 px-6 py-2 bg-purple-600 text-white font-medium rounded-full shadow-lg transition hover:bg-purple-700 transform hover:scale-105"
           >
             Reservar Cita
           </Link>
@@ -166,8 +166,8 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          {/* Botón de Reservar Cita en el menú móvil */}
-          <li className="w-full text-center mt-4">
+          {/* Botón de Reservar Cita en el menú móvil (AHORA OCULTO) */}
+          <li className="w-full text-center mt-4 hidden">
             <Link
               to="/reservar-cita"
               className="block py-2 px-6 font-medium text-white bg-purple-600 rounded-full transition hover:bg-purple-700"
@@ -195,8 +195,8 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-      </nav>
-    );
-  };
+    </nav>
+  );
+};
 
 export default Navbar;
