@@ -17,5 +17,20 @@ Este es un componente de contacto en React, diseñado para la web de La Mirada d
 * **Tailwind CSS**: Framework de CSS para un desarrollo rápido y flexible.
 * **Bi Icons**: Iconos vectoriales para una estética limpia.
 
- ![La Mirada De Tu Alma](src/assets/Proyecto.png)
+---
 
+![La Mirada De Tu Alma](src/assets/Proyecto.png)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia **MIT**. Para más detalles, consulta el archivo `LICENSE`.
+
+---
+
+## ✉️ Contacto
+
+Si tienes alguna pregunta o sugerencia sobre el proyecto, no dudes en contactarme.
+
+* **Página Web**: [La Mirada De Tu Alma](https://www.lawebdetualma.com)
