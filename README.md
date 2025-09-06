@@ -19,12 +19,15 @@ Este es un componente de contacto en React, diseñado para la web de La Mirada d
 
 ---
 
-![La Mirada De Tu Alma](src/assets/Proyecto.png)
-
----
-
 ## ✉️ Contacto
 
 Para ver este proyecto en acción, visita la página web:
 
 * **Página Web**: [La Mirada De Tu Alma](https://www.lawebdetualma.com)
+
+
+![La Mirada De Tu Alma](src/assets/Proyecto.png)
+
+
+
+
