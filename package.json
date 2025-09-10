@@ -13,6 +13,7 @@
     "@emailjs/browser": "^4.4.1",
     "bootstrap-icons": "^1.13.1",
     "framer-motion": "^12.23.12",
+    "node-fetch": "^3.3.2",
     "react": "^19.1.1",
     "react-countup": "^6.5.3",
     "react-dom": "^19.1.1",

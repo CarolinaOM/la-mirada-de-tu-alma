@@ -9,6 +9,35 @@ const carouselPhrases = [
   "Conectar con tu alma es el primer paso para liberar tu potencial infinito.",
 ];
 
+// Nuevo componente para el contador de visitas
+const VisitCounter = () => {
+  const [count, setCount] = useState(null);
+
+  useEffect(() => {
+    // La URL ahora llama a tu función de Netlify, no al servicio externo
+    const counterUrl = '/.netlify/functions/count';
+
+    fetch(counterUrl)
+      .then(response => response.json())
+      .then(data => {
+        setCount(data.value);
+      })
+      .catch(error => {
+        console.error("Error al obtener el contador de visitas:", error);
+      });
+  }, []); 
+
+  return (
+    <>
+      {count !== null ? (
+        <span className="text-sm font-bold">{count}</span>
+      ) : (
+        <span className="text-sm">...</span>
+      )}
+    </>
+  );
+};
+
 const Inicio = () => {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
 
@@ -23,7 +52,8 @@ const Inicio = () => {
 
   return (
     <>
-      {/* Sección principal de Bienvenida */}
+      {/* ... (el resto de tu código es igual) ... */}
+      
       <section className='pt-36 min-h-[85vh] flex flex-col items-center justify-center bg-indigo-950/40 backdrop-blur-sm'>
         <div className="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto p-10 gap-10">
           
@@ -59,7 +89,6 @@ const Inicio = () => {
         </div>
       </section>
 
-      {/* Sección del Carrusel de Frases Inspiradoras */}
       <section className="py-20 bg-indigo-950/60 text-white text-center px-4">
         <div className="max-w-4xl mx-auto">
           <p className="text-3xl sm:text-4xl md:text-5xl font-bold italic transition-opacity duration-1000 ease-in-out opacity-100">
@@ -68,7 +97,6 @@ const Inicio = () => {
         </div>
       </section>
 
-      {/* Sección "Mi Viaje de Sanación"*/}
       <section className="py-20 bg-indigo-950/40 backdrop-blur-sm text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-purple-600">
@@ -86,11 +114,9 @@ const Inicio = () => {
         </div>
       </section>
 
-      {/* Sección de la Guía Gratuita */}
       <section className="py-20 bg-purple-100 text-gray-900">
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
           
-          {/* Columna de Texto */}
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-purple-700">
               Desbloquea tu Potencial con nuestra Guía Gratuita
@@ -101,13 +127,11 @@ const Inicio = () => {
             <p className="text-lg sm:text-xl mb-8 text-gray-800">
               ¡No necesitas nada, solo el deseo de conectar contigo misma!
             </p>
-            {/* Nuevo texto para tus seguidores */}
             <p className="text-xl sm:text-2xl font-bold text-gray-800">
               Descubre el camino hacia tu bienestar y únete a nuestra comunidad para encontrar el apoyo y las herramientas para tu viaje de sanación.
             </p>
           </div>
 
-          {/* Columna de Imagen */}
           <div className="w-full md:w-1/2 flex justify-center items-center">
             <img 
               src={GuiaImagen} 
@@ -119,13 +143,10 @@ const Inicio = () => {
         </div>
       </section>
 
-      {/* Sección del Contador de Visitas */}
       <div className="py-8 bg-indigo-950/40 text-white text-center">
         <div className="max-w-6xl mx-auto px-4">
           <p className="text-sm">
-            {/* ¡Pega aquí el código que te dio el servicio de contador! */}
-            {/* Ejemplo: */}
-            Visitas a la página: 12345
+            Visitas a la página: <VisitCounter />
           </p>
         </div>
       </div>
