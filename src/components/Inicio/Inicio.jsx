@@ -142,14 +142,6 @@ const Inicio = () => {
 
         </div>
       </section>
-
-      <div className="py-8 bg-indigo-950/40 text-white text-center">
-        <div className="max-w-6xl mx-auto px-4">
-          <p className="text-sm">
-            Visitas a la página: <VisitCounter />
-          </p>
-        </div>
-      </div>
     </>
   );
 };
