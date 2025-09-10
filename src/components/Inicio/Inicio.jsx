@@ -118,6 +118,17 @@ const Inicio = () => {
 
         </div>
       </section>
+
+      {/* Sección del Contador de Visitas */}
+      <div className="py-8 bg-indigo-950/40 text-white text-center">
+        <div className="max-w-6xl mx-auto px-4">
+          <p className="text-sm">
+            {/* ¡Pega aquí el código que te dio el servicio de contador! */}
+            {/* Ejemplo: */}
+            Visitas a la página: 12345
+          </p>
+        </div>
+      </div>
     </>
   );
 };
