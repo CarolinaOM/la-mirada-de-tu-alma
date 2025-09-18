@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/Logo.png'; 
-import GuiaImagen from '../../assets/guia-bienestar.jpg'; 
+import GuiaImagen from '../../assets/guia-bienestar.webp'; 
 
 const carouselPhrases = [
   "El bienestar es el único viaje que te lleva a casa, a tu alma.",

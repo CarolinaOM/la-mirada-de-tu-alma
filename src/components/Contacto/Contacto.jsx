@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactoImagen from '../../assets/contacto-mistico2.jpg';
+import ContactoImagen from '../../assets/contacto-mistico2.webp';
 
 const Contacto = () => {
   return (

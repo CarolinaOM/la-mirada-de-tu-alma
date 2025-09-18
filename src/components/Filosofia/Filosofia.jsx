@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 
-import FilosofiaImagenPrincipal from '../../assets/mujer-meditando.jpg';
-import FilosofiaLogrosImagen from '../../assets/mujer-en-bosque-logros.jpg'; 
+import FilosofiaImagenPrincipal from '../../assets/mujer-meditando.webp';
+import FilosofiaLogrosImagen from '../../assets/mujer-en-bosque-logros.webp'; 
 
 const Filosofia = () => {
   const [ref, inView] = useInView({

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import TerapiaCard from './TerapiaCard'; // <-- Importamos el nuevo componente
 
 // Importa las imágenes de cada terapia
-import ReikiPersonasImg from '../../assets/reiki-personas.jpg';
-import ReikiAnimalesImg from '../../assets/reiki-animales.jpg';
-import ChakrasImg from '../../assets/chakras.jpg';
-import PenduloImg from '../../assets/pendulo.jpg';
-import LimpiezaImg from '../../assets/limpieza-energetica.jpg';
-import CartasImg from '../../assets/lectura-cartas.jpg';
+import ReikiPersonasImg from '../../assets/reiki-personas.webp';
+import ReikiAnimalesImg from '../../assets/reiki-animales.webp';
+import ChakrasImg from '../../assets/chakras.webp';
+import PenduloImg from '../../assets/pendulo.webp';
+import LimpiezaImg from '../../assets/limpieza-energetica.webp';
+import CartasImg from '../../assets/lectura-cartas.webp';
 
 const Terapias = () => {
   const [expandedTerapia, setExpandedTerapia] = useState(null);
