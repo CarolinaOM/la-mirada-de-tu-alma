@@ -10,7 +10,7 @@ const TerapiaCard = ({ title, description, fullDescription, imageSrc, isExpanded
     {/* Contenido principal que se muestra siempre */}
     <div className={`transition-all duration-500 ease-in-out ${isExpanded ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
       <div className="w-full mb-4 rounded-lg flex items-center justify-center overflow-hidden">
-        <img src={imageSrc} alt={title} className="w-full h-auto object-contain" />
+        <img src={imageSrc} alt={title} className="w-full h-auto object-contain" loading="lazy" />
       </div>
       <h3 className="text-2xl font-bold text-purple-400 mb-2">{title}</h3>
       <p className="text-gray-300 mb-2 flex-grow">{description}</p>
@@ -24,7 +24,7 @@ const TerapiaCard = ({ title, description, fullDescription, imageSrc, isExpanded
     {/* Contenedor del contenido expandido (se superpone al expandir) */}
     <div className={`absolute inset-0 bg-gray-800 p-6 rounded-lg shadow-lg transition-all duration-500 ease-in-out transform flex flex-col items-center justify-center ${isExpanded ? 'scale-100 opacity-100 z-10' : 'scale-95 opacity-0 pointer-events-none'}`}>
       <div className="w-full h-1/3 mb-4 rounded-lg flex items-center justify-center overflow-hidden">
-        <img src={imageSrc} alt={title} className="w-full h-auto object-contain" />
+        <img src={imageSrc} alt={title} className="w-full h-auto object-contain" loading="lazy" />
       </div>
       <h3 className="text-2xl font-bold text-purple-400 mb-2">{title}</h3>
       <p className="text-gray-300 text-base mb-6">{fullDescription}</p>

@@ -42,6 +42,7 @@ const Filosofia = () => {
               src={FilosofiaImagenPrincipal} 
               alt='Mujer meditando en un entorno espiritual' 
               className='w-full h-auto max-h-[400px] object-cover rounded-lg shadow-lg'
+              loading="lazy" 
             />
           </div>
 
@@ -65,6 +66,7 @@ const Filosofia = () => {
             src={FilosofiaLogrosImagen} 
             alt='Mujer meditando en un entorno natural' 
             className='w-full h-auto object-cover object-center'
+            loading="lazy" 
           />
           <div className="absolute inset-x-0 bottom-0 py-10 px-6 sm:px-10 text-white bg-purple-900/80">
             <div className="grid grid-cols-2 gap-8">

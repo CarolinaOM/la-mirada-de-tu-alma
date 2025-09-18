@@ -52,7 +52,6 @@ const Inicio = () => {
 
   return (
     <>
-      {/* ... (el resto de tu código es igual) ... */}
       
       <section className='pt-36 min-h-[85vh] flex flex-col items-center justify-center bg-indigo-950/40 backdrop-blur-sm'>
         <div className="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto p-10 gap-10">
@@ -62,6 +61,7 @@ const Inicio = () => {
               src={Logo} 
               alt='Logo La Mirada de tu Alma' 
               className='max-w-[300px] md:max-w-md'
+              loading="lazy" 
             />
           </div>
           
@@ -137,6 +137,7 @@ const Inicio = () => {
               src={GuiaImagen} 
               alt='Ilustración de guía de bienestar' 
               className='max-w-full h-auto rounded-lg shadow-lg'
+              loading="lazy" 
             />
           </div>
 

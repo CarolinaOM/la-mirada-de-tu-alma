@@ -26,6 +26,7 @@ const Contacto = () => {
             alt="Ilustración mística de conexión"
             // Se quita el borde morado para un estilo más limpio
             className="rounded-lg shadow-lg w-[25rem] h-auto object-cover transform hover:scale-105 transition-transform duration-300"
+             loading="lazy"
           />
         </div>
 
