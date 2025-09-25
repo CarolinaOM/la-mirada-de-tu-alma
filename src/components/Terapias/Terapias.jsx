@@ -72,9 +72,9 @@ const Terapias = () => {
         
         {/* Sección de Título y Descripción General */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
             Terapias Holísticas a Distancia
-          </h2>
+          </h1>
           <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto">
             Descubre un camino de bienestar a través de sesiones diseñadas para armonizar tu cuerpo, mente y espíritu desde la comodidad de tu hogar.
           </p>

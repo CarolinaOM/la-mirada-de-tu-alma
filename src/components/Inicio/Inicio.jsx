@@ -99,9 +99,9 @@ const Inicio = () => {
 
       <section className="py-20 bg-indigo-950/40 backdrop-blur-sm text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-purple-600">
+          <h3 className="text-3xl sm:text-4xl font-bold mb-4 text-purple-600">
             Mi Viaje de Sanación
-          </h2>
+          </h3>
           <p className="text-lg sm:text-xl max-w-2xl mx-auto mb-8 text-white-200">
             Mi misión es guiarte en el redescubrimiento de tu luz interior, a través de las herramientas que me han ayudado a mí. Te invito a conocer más sobre mi filosofía y mi camino.
           </p>
@@ -118,9 +118,9 @@ const Inicio = () => {
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
           
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-purple-700">
+            <h3 className="text-3xl sm:text-4xl font-bold mb-4 text-purple-700">
               Desbloquea tu Potencial con nuestra Guía Gratuita
-            </h2>
+            </h3>
             <p className="text-lg sm:text-xl mb-6 text-gray-800">
               Sumérgete en "Los Primeros Pasos Hacia tu Bienestar" y descubre técnicas sencillas para empezar a armonizar tu energía y encontrar la calma interior.
             </p>

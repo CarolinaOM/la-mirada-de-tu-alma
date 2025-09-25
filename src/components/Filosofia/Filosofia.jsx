@@ -22,16 +22,16 @@ const Filosofia = () => {
         
         {/* Sección Superior: Información personal */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
             Soy Carolina Ordoñez
-          </h2>
+          </h1>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-16">
           <div className="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left">
-            <h3 className="text-3xl font-bold text-purple-400 mb-4">
+            <h2 className="text-3xl font-bold text-purple-400 mb-4">
               Mi Esencia y Propósito
-            </h3>
+            </h2>
             <p className="text-lg text-gray-200">
               Bienvenida/o a un espacio de conexión y sanación profunda. Mi misión es guiarte en el redescubrimiento de tu luz interior, a través de herramientas energéticas y espirituales que transformarán tu vida.
             </p>
@@ -88,9 +88,9 @@ const Filosofia = () => {
         
         {/* Sección inferior con botón */}
         <div className="mt-16 text-center">
-          <h3 className="text-3xl font-bold text-purple-400 mb-4">
+          <h2 className="text-3xl font-bold text-purple-400 mb-4">
             Especialidades que te guiarán en tu camino
-          </h3>
+          </h2>
           <p className="text-lg text-gray-200 max-w-2xl mx-auto mb-8">
             Enfocada en la sanación energética, acompaño cada sesión con las siguientes herramientas para crear una experiencia única y personalizada para ti.
           </p>
