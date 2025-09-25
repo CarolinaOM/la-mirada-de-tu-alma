@@ -79,11 +79,20 @@ const Inicio = () => {
               Te acompaño en el camino del autodescubrimiento y la sanación energética para que encuentres la paz interior que buscas. Descubre un espacio de calma donde el bienestar florece.
             </p>
 
+            {/* Botón existente */}
             <Link 
               to="/terapias" 
               className="mt-4 bg-purple-600 py-3 px-8 text-white rounded-full hover:bg-purple-700 transition-colors text-lg font-medium"
             >
               Descubre nuestras terapias
+            </Link>
+
+            {/* NUEVO BOTÓN PARA CONTACTO */}
+            <Link
+              to="/contacto"
+              className="mt-4 bg-purple-600 py-3 px-8 text-white rounded-full hover:bg-purple-700 transition-colors text-lg font-medium"
+            >
+              Contacta conmigo
             </Link>
           </div>
         </div>
@@ -141,6 +150,16 @@ const Inicio = () => {
             />
           </div>
 
+        </div>
+
+        {/* NUEVO BOTÓN DE CONTACTO AL FINAL DE LA PÁGINA */}
+        <div className="mt-16 text-center">
+          <Link 
+            to="/contacto"
+            className="inline-block bg-purple-600 py-3 px-8 text-white rounded-full hover:bg-purple-700 transition-colors text-lg font-medium"
+          >
+            Agenda una cita conmigo
+          </Link>
         </div>
       </section>
     </>
