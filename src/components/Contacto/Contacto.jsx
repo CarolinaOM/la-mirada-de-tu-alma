@@ -3,12 +3,11 @@ import ContactoImagen from '../../assets/contacto-mistico2.webp';
 
 const Contacto = () => {
   return (
-    <section
-      id="contacto"
-      className="pt-36 pb-20 px-4 md:px-10 lg:px-20 min-h-screen
-                 bg-gradient-to-br from-purple-200 to-indigo-200 text-gray-900 
-                 flex items-center justify-center relative overflow-hidden"
-    >
+      <section
+        id="contacto"
+        className="pt-36 pb-20 px-4 md:px-10 lg:px-20 min-h-screen
+                  bg-indigo-950/40 backdrop-blur-sm relative"
+      >
       <div className="absolute top-10 left-1/4 w-48 h-48 bg-purple-300/30 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
       <div className="absolute bottom-20 right-1/4 w-48 h-48 bg-indigo-300/30 rounded-full mix-blend-multiply filter blur-xl animation-delay-2000 animate-blob"></div>
 
